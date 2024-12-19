@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left-side Full Page Illustration -->
+        <div class="illustration">
+            <img src="profile_man.png" alt="Illustration">
+        </div>
+        
+        <!-- Registration Form -->
+        <div class="form-container">
+            <form action="submit.php" method="POST">
+                <h2>Registration</h2>
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" name="fullname" placeholder="Please enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob" required>
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="Phone number" required>
+                </div>
+                <div class="input-group">
+                    <label>Country</label>
+                    <input type="text" name="country" placeholder="Country" required>
+                </div>
+                <div class="input-group">
+                    <label>City</label>
+                    <input type="text" name="city" placeholder="City" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="gender-group">
+                    <label>Gender</label>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female" checked> Female
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
